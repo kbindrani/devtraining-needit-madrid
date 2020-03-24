@@ -2,12 +2,25 @@
     <element audit="true" extends="task" label="NeedIt" max_length="40" name="x_58872_needit_needit" sizeclass="14" type="collection">
         <element label="Requested For" mandatory="true" max_length="32" name="requested_for" reference="sys_user" type="reference"/>
         <element attributes="edge_encryption_enabled=true" choice="1" label="Request Type" max_length="40" name="requesttype" type="string">
-            <choice/>
+            <choice>
+                <element inactive_on_update="false" label="Facilities" sequence="0" value="Facilities"/>
+                <element inactive_on_update="false" label="Human Resources" sequence="0" value="Human Resources"/>
+                <element inactive_on_update="false" label="Legal" sequence="0" value="Legal"/>
+            </choice>
         </element>
         <element attributes="edge_encryption_enabled=true" choice="1" dependent="active" dependent_on_field="active" label="What Needed" max_length="40" name="u_choice_1" type="string" use_dependent_field="true">
             <choice>
                 <element inactive_on_update="false" label="Choice 1" sequence="0" value="Choice 1"/>
+                <element inactive_on_update="false" label="Facilities 1" sequence="0" value="Facilities 1"/>
+                <element inactive_on_update="false" label="Facilities 2" sequence="0" value="Facilities 2"/>
+                <element inactive_on_update="false" label="Facilities1" sequence="0" value="Facilities1"/>
+                <element inactive_on_update="false" label="Human Resources 2" sequence="0" value="Human Resources 2"/>
+                <element inactive_on_update="false" label="Legal" sequence="0" value="Legal"/>
+                <element inactive_on_update="false" label="Legal 1" sequence="0" value="Legal 1"/>
+                <element inactive_on_update="false" label="Legal 2" sequence="0" value="Legal 2"/>
+                <element inactive_on_update="false" label="Legal1" sequence="0" value="Legal1"/>
                 <element inactive="true" inactive_on_update="true" label="Mouse" sequence="0" value="Mouse"/>
+                <element inactive_on_update="false" label="Other" sequence="0" value="Other"/>
                 <element inactive_on_update="false" label="Choice 2" sequence="1" value="Choice 2"/>
                 <element inactive="true" inactive_on_update="true" label="Software" sequence="1" value="Software"/>
                 <element inactive_on_update="false" label="Choice 3" sequence="2" value="Choice 3"/>
